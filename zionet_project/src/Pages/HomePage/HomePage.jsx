@@ -49,9 +49,14 @@ const HomePage = () => {
       );
       if (!response.ok) {
         if (response.status === 404) {
+          
           return []; // Return empty array if no todos found
+
         }
-        throw new Error("Network response was not ok");
+        else{
+
+          throw new Error("Network response was not ok");
+        }
       }
       return response.json();
     },
