@@ -1,0 +1,33 @@
+.todo {
+  display: flex;
+  flex-direction: row;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
