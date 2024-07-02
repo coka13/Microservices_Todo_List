@@ -179,7 +179,7 @@ const HomePage = () => {
     <div className="todo-list">
       {todosStats && (
         <div className="head">
-          <h1>Todo list</h1>
+          <h2>Todo list</h2>
           <p>Hi {user.email}!</p>
           {/* Button to open modal */}
           <button

@@ -1,0 +1,13 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .card {
+    width: 300px;
+  }
+  
+  .btn-link {
+    text-decoration: none;
+  }
+  
