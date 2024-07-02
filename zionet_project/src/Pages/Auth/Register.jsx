@@ -51,7 +51,7 @@ const Register = () => {
                 Register
               </button>
               <Link to="/auth" className="btn btn-link w-100 mt-2">
-                Already Registered? Login
+                Already Registered? Login!
               </Link>
             </div>
           </form>
