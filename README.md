@@ -79,7 +79,6 @@ Now you can monitor the queue
 
 ## **CLIENT**
 
-<video controls width="100%">
-  <source src="https://github.com/coka13/Microservices_Todo_List/blob/main/Recording%202024-07-03%20042944.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+## **CLIENT**
+
+[Watch the client demo video](https://github.com/coka13/Microservices_Todo_List/blob/main/Recording%202024-07-03%20042944.mp4)
