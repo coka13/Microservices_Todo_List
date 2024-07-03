@@ -79,4 +79,6 @@ Now you can monitor the queue
 
 ## **CLIENT**
 
-https://www.youtube.com/watch?v=21nfeRn7L-E
+<video width="320" height="240" controls>
+  <source src="Recording 2024-07-03 042944.mp4" type="video/mp4">
+</video>
