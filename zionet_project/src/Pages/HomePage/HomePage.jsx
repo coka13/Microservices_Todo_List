@@ -63,7 +63,7 @@ const HomePage = () => {
     refetchOnWindowFocus: false, // Prevent refetching on window focus for better control
   });
 
-  // Mutation to update todo status via service3
+  // Mutation to update todo status via service2
   const updateTodoMutation = useMutation({
     mutationFn: async ({ id, completed }) => {
       const response = await fetch(
@@ -88,7 +88,7 @@ const HomePage = () => {
     },
   });
 
-  // Mutation to delete a todo via service4
+  // Mutation to delete a todo via service2
   const deleteTodoMutation = useMutation({
     mutationFn: async (id) => {
       const response = await fetch(
@@ -180,7 +180,7 @@ const HomePage = () => {
       {todosStats && (
         <div className="head">
           <h2>Todo list</h2>
-          <p>Hi {user.email}!</p>
+          <h5>Hi {user.email}!</h5>
           {/* Button to open modal */}
           <button
             type="button"

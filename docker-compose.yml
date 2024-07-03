@@ -61,13 +61,14 @@ services:
       - mongo-data:/data/db
 
   rabbitmq:
-    image: rabbitmq:latest
+    image: rabbitmq:3-management
     container_name: rabbitmq
     ports:
       - "5672:5672"  # RabbitMQ AMQP port
       - "15672:15672"  # RabbitMQ management UI port
     networks:
       - mynetwork
+
 
 
   smtp4dev:

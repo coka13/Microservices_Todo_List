@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
-import "./Auth.css";
+import "./Auth.css"; // Import custom CSS for authentication styles
 
 const Register = () => {
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState("");
-  const navigate = useNavigate();
+  const [email, setEmail] = useState(""); // State for email input
+  const [error, setError] = useState(""); // State for error handling
+  const navigate = useNavigate(); // Hook for programmatic navigation
 
+  // Function to handle registration form submission
   const handleRegister = async (e) => {
     e.preventDefault(); // Prevent form from submitting the default way
     try {
@@ -21,14 +22,14 @@ const Register = () => {
       const jsonRes = await response.json();
 
       if (!response.ok) {
-        setError(jsonRes.error);
+        setError(jsonRes.error); // Set error message if registration fails
         throw new Error("Network response was not ok");
       } else {
-        navigate("/auth");
+        navigate("/auth"); // Redirect to login page on successful registration
       }
     } catch (error) {
-      setError("An error occurred during registration. Please try again.");
-      console.error("Registration error:", error);
+      setError("An error occurred during registration. Please try again."); // Handle generic registration error
+      console.error("Registration error:", error); // Log detailed error message to console
     }
   };
 
@@ -40,13 +41,13 @@ const Register = () => {
           <form onSubmit={handleRegister}>
             <div className="form-group">
               <input
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)} // Update email state on input change
                 type="email"
                 className="form-control"
                 placeholder="Enter email address"
                 required
               />
-              {error && <p className="text-danger">{error}</p>}
+              {error && <p className="text-danger">{error}</p>} {/* Display error message if registration fails */}
               <button type="submit" className="btn btn-primary w-100">
                 Register
               </button>

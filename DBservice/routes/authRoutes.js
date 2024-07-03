@@ -3,7 +3,7 @@ import {  addUserController, getUserController,getUserByIdController} from '../c
 
 
 const router = express.Router();
-
+// Routes
 router.post('/', addUserController);
 router.get('/', getUserController);
 router.get('/:userId', getUserByIdController);

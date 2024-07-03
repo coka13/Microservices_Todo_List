@@ -1,5 +1,6 @@
 import { Todo } from "../model.js";
 
+// Todo services
 export const getTodosService = (user) => Todo.find({ user: user });
 export const updateTodoService = (id, completed) => Todo.findByIdAndUpdate(id, { completed: Boolean(completed) });
 export const addTodoService = (task, id) => Todo.create({ task: task, completed: false, user: id });
