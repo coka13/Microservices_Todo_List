@@ -79,6 +79,4 @@ Now you can monitor the queue
 
 ## **CLIENT**
 
-<video width="320" height="240" controls>
-  <source src="Recording 2024-07-03 042944.mp4" type="video/mp4">
-</video>
+[Watch the Client Demo Video](https://github.com/coka13/Microservices_Todo_List/blob/main/Recording%202024-07-03%20042944.mp4)
