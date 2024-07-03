@@ -79,6 +79,5 @@ Now you can monitor the queue
 
 ## **CLIENT**
 
-## **CLIENT**
-
+[![]https://youtu.be/21nfeRn7L-E](https://www.youtube.com/watch?v=21nfeRn7L-E)
 [Watch the client demo video](https://github.com/coka13/Microservices_Todo_List/blob/main/Recording%202024-07-03%20042944.mp4)
