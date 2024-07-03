@@ -12,7 +12,7 @@ services:
     environment:
       - NODE_ENV=production
       - MONGO_URI=mongodb://mongodb:27017/todos
-      - RABBITMQ_URL=amqp://rabbitmq:5672
+      - RABBITMQ_URL=amqp://admin:admin@rabbitmq:5672
       - QUEUE_NAME=todoQueue
     depends_on:
       - mongodb
@@ -30,7 +30,7 @@ services:
       - NODE_ENV=production
       - MONGO_URI=mongodb://mongodb:27017/todos
       - SERVICE1_URL=http://service1:3000
-      - RABBITMQ_URL=amqp://rabbitmq:5672
+      - RABBITMQ_URL=amqp://admin:admin@rabbitmq:5672
       - QUEUE_NAME=todoQueue
     depends_on:
       - mongodb
@@ -68,6 +68,9 @@ services:
       - "15672:15672"  # RabbitMQ management UI port
     networks:
       - mynetwork
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin 
+      - RABBITMQ_DEFAULT_PASS=admin  
 
 
 
@@ -84,6 +87,8 @@ services:
     restart: unless-stopped
     networks:
       - mynetwork
+
+    
 
    
 networks:
