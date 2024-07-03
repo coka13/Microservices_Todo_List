@@ -29,6 +29,7 @@ The Microservices Fullstack Todo-List app manages todos efficiently through a mo
 ## **MICROSERVICES**
 
 1 - **DBservice** - Microservice to perform DB operations.
+
 2 - **managerService** - Microservice dedicated to specific functionalities like managing and updating the status of todos.
 
 # **INSTRUCTIONS**
